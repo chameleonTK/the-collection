@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-clean-css": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.8",
+    "shelljs": "^0.3.0",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-rev": "^7.1.2"
+  },
+  "dependencies": {},
+  "name": "the-collection",
+  "description": "",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "Pakawat Nakwijit",
+  "license": "ISC"
+}
