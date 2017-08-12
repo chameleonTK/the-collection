@@ -7,6 +7,35 @@ html,body{
     font-family: 'Raleway', sans-serif;
     padding: 0px;
     margin: 0px;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.site-name{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: lighter;
+
+    +div{
+        font-size: 20px;
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+}
+
+.-full-height{
+    height: 100vh;
+}
+
+.-flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.-text-center{
+    text-align: center;
 }
