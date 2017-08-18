@@ -1,27 +1,52 @@
 {
-  "private": true,
-  "scripts": {},
-  "devDependencies": {
-    "bower": "^1.3.3",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-clean-css": "*",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^1.5.4",
-    "gulp-util": "^3.0.8",
-    "shelljs": "^0.3.0",
-    "gulp-angular-templatecache": "^2.0.0",
-    "gulp-rev": "^7.1.2"
-  },
-  "dependencies": {},
-  "name": "the-collection",
-  "description": "",
-  "version": "1.0.0",
-  "main": "webpack.mix.js",
-  "directories": {
-    "test": "tests"
-  },
-  "author": "Pakawat Nakwijit",
-  "license": "ISC"
+    "private": true,
+    "scripts": {
+        "prod": "gulp --production",
+        "dev": "gulp watch",
+        "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+        "lite": "lite-server",
+        "postinstall": "typings install",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+        "typings": "typings"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@angular/common": "~4.0.1",
+        "@angular/compiler": "~4.0.1",
+        "@angular/core": "~4.0.1",
+        "@angular/forms": "~4.0.1",
+        "@angular/http": "~4.0.1",
+        "@angular/platform-browser": "~4.0.1",
+        "@angular/platform-browser-dynamic": "~4.0.1",
+        "@angular/router": "~4.0.1",
+        "angular-in-memory-web-api": "~0.3.1",
+        "core-js": "^2.4.1",
+        "reflect-metadata": "^0.1.10",
+        "rxjs": "5.3.0",
+        "systemjs": "0.20.12",
+        "zone.js": "^0.8.5"
+    },
+    "devDependencies": {
+        "@types/core-js": "0.9.36",
+        "@types/jasmine": "^2.5.47",
+        "@types/node": "^6.0.46",
+        "@types/selenium-webdriver": "^3.0.1",
+        "concurrently": "^3.2.0",
+        "lite-server": "^2.2.2",
+        "typescript": "~2.2.2",
+        "typings": "^2.1.0",
+        "axios": "^0.16.0",
+        "bootstrap-sass": "^3.3.7",
+        "gulp": "^3.9.1",
+        "jquery": "^3.2.1",
+        "laravel-elixir": "^6.0.0-15",
+        "laravel-elixir-ts": "^1.1.3",
+        "laravel-elixir-vue": "^0.1.8",
+        "laravel-elixir-webpack-official": "^1.0.10",
+        "laravel-mix": "^0.10.0",
+        "lodash": "^4.17.4",
+        "vue": "^1.0.26",
+        "vue-resource": "^0.9.3"
+    }
 }
