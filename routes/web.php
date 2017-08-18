@@ -12,3 +12,5 @@
 */
 
 Route::get('/', ["uses"=>"MainController@index"]);
+Route::get('/u/{username}', ["uses"=>"CollectionController@index"]);
+Route::get('/g/{gid}', ["uses"=>"ItemController@show"]);
