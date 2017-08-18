@@ -58,6 +58,6 @@
     </nav>
 
     <div class="ui text container">
-        
+        <my-app></my-app>
     </div>
 @stop

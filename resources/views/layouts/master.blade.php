@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="masterApp" xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
       xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
@@ -32,16 +32,11 @@
         <link href="{{asset('lib/css-spinners/css/spinners.css')}}" rel="stylesheet" type="text/css" />
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
-
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js" type="text/javascript"></script> -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js"></script>
-        <script type="text/javascript" src="{{asset('lib/ngInfiniteScroll/build/ng-infinite-scroll.min.js')}}"></script>
-        <link rel="shortcut icon" type="image/png" href="{{asset('images/favicon.png')}}"/>
+
+        <link rel="shortcut icon" type="image/png" href="{{asset('favicon.ico')}}"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
         <title>
             @section("title")
@@ -51,19 +46,10 @@
         
         <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 
-        <link href="{{ env('PRODUCTION',false)?url('/').elixir('css/app.min.css'):asset('css/app.min.css') }}" rel="stylesheet" type="text/css" />
-        <script src="{{ env('PRODUCTION',false)?url('/').elixir('js/app.min.js'):asset('js/app.js') }}" type="text/javascript"></script>
-        <script type="text/javascript">
-            angular.module('masterApp')
-            .constant("BASE_URL","{{url('/')}}/")
-            .constant("API_URL","{{url('/')}}/api/")
-
-        </script>
-
         @section("style")
         @show
     </head>
-    <body ng-controller="MainController">
+    <body>
 
         
         @yield('content')
