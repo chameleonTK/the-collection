@@ -8,17 +8,7 @@ class Formatter:
 
     def dump(self, collection):
         fout = open("fout/"+self.slug+"-p"+str(self.foutIndex)+".json", "w")
-        n = len(collection);
-
-        index=0
-        fout.write("[\n")
-        for i in range(n):
-            fout.write(json.dumps(collection[i]))
-            if i==n-1:
-                fout.write("\n")
-            else:
-                fout.write(",\n")
-        fout.write("]\n")
+        json.dump(collection, fout)
         self.foutIndex +=1
 
     def rewrite(self, row):

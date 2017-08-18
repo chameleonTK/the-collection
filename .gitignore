@@ -18,3 +18,5 @@ public/app
 **/.DS_Store
 
 mod/fout/
+
+mod/**/*.pyc
