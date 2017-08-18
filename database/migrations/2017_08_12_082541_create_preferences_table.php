@@ -13,16 +13,16 @@ class CreatePreferencesTable extends Migration
      */
     public function up()
     {
-        Schema::create('preferences', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('collection_id', false, true);
-            $table->integer('item_id', false, true);
-            $table->boolean('fav')->default(false);
-            $table->integer('rate', false, true);
+        // Schema::create('preferences', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->integer('collection_id', false, true);
+        //     $table->integer('item_id', false, true);
+        //     $table->boolean('fav')->default(false);
+        //     $table->integer('rate', false, true);
             
-            $table->string('comment')->nullable();
-            $table->timestamps();
-        });
+        //     $table->string('comment')->nullable();
+        //     $table->timestamps();
+        // });
     }
 
     /**

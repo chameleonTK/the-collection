@@ -13,15 +13,15 @@ class CreateCollectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('collections', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('user_id', false, true);
-            $table->string('name');
-            $table->string('label');
-            $table->string('cover_image');
-            $table->string('category');
-            $table->timestamps();
-        });
+        // Schema::create('collections', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->integer('user_id', false, true);
+        //     $table->string('name');
+        //     $table->string('label');
+        //     $table->string('cover_image');
+        //     $table->string('category');
+        //     $table->timestamps();
+        // });
     }
 
     /**
